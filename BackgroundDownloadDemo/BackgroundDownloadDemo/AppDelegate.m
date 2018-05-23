@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "NSURLSession+CorrectedResumeData.h"
 
-#define IS_IOS10ORLATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10)
+#define IS_IOS10ORLATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10 && [[[UIDevice currentDevice] systemVersion] floatValue] < 11.3)
 
 typedef void(^CompletionHandlerType)();
 
